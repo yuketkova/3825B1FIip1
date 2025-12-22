@@ -5,7 +5,7 @@
 typedef double (*taylor_func)(double x, double eps, int N, int* used_terms);
 double taylor_cos(double x, double eps, int N, int* used_terms) {
     double sum = 0.0;
-    double term = 1.0;     // первый член (x^0 / 0!)
+    double term = 1.0;     
     int n = 0;
 
     for (n = 0; n < N; n++) {
@@ -130,3 +130,4 @@ int main() {
     }
     return 0;
 }
+
